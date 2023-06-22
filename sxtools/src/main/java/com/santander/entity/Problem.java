@@ -32,6 +32,6 @@ public class Problem implements Serializable {
     @Column(name = "description")
     private String description;
 
-    @OneToMany(mappedBy = "problem", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "problem")
     private List<ProductProblem> productProblems;
 }

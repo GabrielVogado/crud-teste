@@ -36,7 +36,7 @@ public class Product implements Serializable {
     @Column(name = "product_father_id")
     private Long productFatherId;
 
-    @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "product")
     private List<ProductProblem> productProblems;
 
 

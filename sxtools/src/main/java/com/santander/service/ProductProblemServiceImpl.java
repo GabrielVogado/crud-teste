@@ -31,7 +31,7 @@ public class ProductProblemServiceImpl implements ProductProblemService {
     }
 
     @Override
-    @Cacheable(value = "productproblemIdCache" , key = "#productId", unless="#result == null")
+    //@Cacheable(value = "productproblemIdCache" , key = "#productId", unless="#result == null")
     public List<ProductProblem> getProblemProduct(Long productId) {
         return productProblemRepository.findByProductId(productId);
     }
