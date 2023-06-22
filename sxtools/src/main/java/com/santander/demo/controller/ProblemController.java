@@ -29,8 +29,8 @@ public class ProblemController implements ProblemDocument {
         return new ResponseEntity<>(problemService.cadastraProblem(problemRequest), HttpStatus.CREATED);
     }
 
-    @GetMapping("/{problemId}")
-    public ResponseEntity<Problem> getProblemById(@PathVariable(value = "problemId") Long idProblem) {
+    @GetMapping("/{problem_Id}")
+    public ResponseEntity<Problem> getProblemById(@PathVariable(value = "problem_Id") Long idProblem) {
         return new ResponseEntity<>(
                 problemService.getProblemById(idProblem), HttpStatus.OK);
     }
@@ -40,7 +40,7 @@ public class ProblemController implements ProblemDocument {
         return new ResponseEntity<>( problemService.getProblem(), HttpStatus.OK);
     }
 
-    @PutMapping("/{problem_id}")
+    @PutMapping("/{problemId}")
     public ResponseEntity excluirProblem(@PathVariable(value = "problemId") Long idProblem) {
         problemService.deletarProblem(idProblem);
         return new ResponseEntity(null, HttpStatus.NO_CONTENT);
