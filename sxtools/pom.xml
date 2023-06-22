@@ -11,8 +11,8 @@
 	<groupId>com.santander</groupId>
 	<artifactId>sxtools</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>sxtools</name>
+	<description>SXTool Soluçoes</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
