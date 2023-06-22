@@ -7,8 +7,6 @@ Utilizar Junit e Mockito para os testes unitários
 80% de Coverage
 Utilizar a arquitetura em 3 camadas. 
 Disponibilizar caches nos métodos de consultas, pode utilizar o cache do próprio Spring ou via Redis
-![image](https://github.com/GabrielVogado/santander-sxtools/assets/43838749/81f56215-9358-4eca-9609-2f3976480157)
-
 
 
 ### Instruções
